@@ -1,0 +1,18 @@
+groups:
+  - alert: LowFreeMemory
+    expr: node_memory_MemFree_bytes/node_memory_MemTotal_bytes>0.8
+    for: 5m
+    labels:
+      severity: 2
+    annotations:
+      description: Low free memory
+      summary: Low free memory
+
+  - alert: Disk_Free_Space
+    expr: node_filesystem_avail_bytes{mountpoint="/dev/sdc"}<1121501860331 # 1,02tb
+    for: 5m
+    labels:
+      severity: 2
+    annotations:
+      description: mountpoint /dev/sdc is full
+      summary: mountpoint /dev/sdc is full
