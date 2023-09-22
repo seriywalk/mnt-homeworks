@@ -21,10 +21,12 @@
 
 ### Задание 1
 
-1. Используя директорию [help](./help) внутри этого домашнего задания, запустите связку prometheus-grafana.
+1. Используя директорию [mytask](./mytask) внутри этого домашнего задания, запустите связку prometheus-grafana.
 1. Зайдите в веб-интерфейс grafana, используя авторизационные данные, указанные в манифесте docker-compose.
 1. Подключите поднятый вами prometheus, как источник данных.
 1. Решение домашнего задания — скриншот веб-интерфейса grafana со списком подключенных Datasource.
+
+![source.png](images%2Fsource.png)
 
 ## Задание 2
 
@@ -37,11 +39,24 @@
 Создайте Dashboard и в ней создайте Panels:
 
 - утилизация CPU для nodeexporter (в процентах, 100-idle);
+
+`100 - (avg by (instance) (rate(node_cpu_seconds_total{job="nodeexporter",mode="idle"}[1m])) * 100)`
+
 - CPULA 1/5/15;
+
+`A-node_load1, B - node_load5, С - node_load15`
+
 - количество свободной оперативной памяти;
+ 
+`node_memory_MemFree_bytes`
+
 - количество места на файловой системе.
 
+`node_filesystem_avail_bytes`
+
 Для решения этого задания приведите promql-запросы для выдачи этих метрик, а также скриншот получившейся Dashboard.
+
+![dashboard.png](images%2Fdash.png)
 
 ## Задание 3
 
