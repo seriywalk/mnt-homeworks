@@ -62,7 +62,7 @@
 
 1. Создайте для каждой Dashboard подходящее правило alert — можно обратиться к первой лекции в блоке «Мониторинг».
 1. В качестве решения задания приведите скриншот вашей итоговой Dashboard.
-[Правила оповещений]([rules.yaml](mytask%2Fprometheus%2Frules%2Frules.yaml))
+[Правила оповещений](10-monitoring-03-grafana/mytask/prometheus/rules/rules.yaml)
 
 ![alert.png](images%2Falert.png)
 
@@ -71,7 +71,7 @@
 1. Сохраните ваш Dashboard.Для этого перейдите в настройки Dashboard, выберите в боковом меню «JSON MODEL». Далее скопируйте отображаемое json-содержимое в отдельный файл и сохраните его.
 1. В качестве решения задания приведите листинг этого файла.
 
-[Листинг ]([sirwalkJSONDashboard.json](mytask%2FsirwalkJSONDashboard.json))
+[Листинг ](10-monitoring-03-grafana/mytask/sirwalkJSONDashboard.json)
 ---
 
 ### Как оформить решение задания
