@@ -19,6 +19,10 @@
 6. On test -> On fix, Done.
 7. Done -> Closed, Open.
 
+![bug workflow.png](images%2Fbug%20workflow.png)
+
+[Workflow.xml](09-ci-01-intro/Netology1.xml)
+
 Остальные задачи должны проходить по упрощённому workflow:
 
 1. Open -> On develop.
@@ -26,6 +30,10 @@
 3. Done develop -> On test.
 4. On test -> On develop, Done.
 5. Done -> Closed, Open.
+
+![simple workflow.png](images%2Fsimple%20workflow.png)
+
+[Workflow.xml](09-ci-01-intro/Workflow for other tasks.xml)
 
 **Что нужно сделать**
 
@@ -35,6 +43,7 @@
 1. Верните задачи в статус Open.
 1. Перейдите в Scrum, запланируйте новый спринт, состоящий из задач эпика и одного бага, стартуйте спринт, проведите задачи до состояния Closed. Закройте спринт.
 2. Если всё отработалось в рамках ожидания — выгрузите схемы workflow для импорта в XML. Файлы с workflow и скриншоты workflow приложите к решению задания.
+
 
 ---
 
