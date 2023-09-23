@@ -33,7 +33,7 @@
 
 ![simple workflow.png](images%2Fsimple%20workflow.png)
 
-[Workflow.xml](Workflow for other tasks.xml)
+[Workflow simple.xml](Workflowsimple.xml)
 
 **Что нужно сделать**
 
