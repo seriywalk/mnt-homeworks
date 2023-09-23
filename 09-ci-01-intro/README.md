@@ -21,7 +21,7 @@
 
 ![bug workflow.png](images%2Fbug%20workflow.png)
 
-[Workflow.xml](09-ci-01-intro/Netology1.xml)
+[Workflow.xml](Netology1.xml)
 
 Остальные задачи должны проходить по упрощённому workflow:
 
@@ -33,7 +33,7 @@
 
 ![simple workflow.png](images%2Fsimple%20workflow.png)
 
-[Workflow.xml](09-ci-01-intro/Workflow for other tasks.xml)
+[Workflow.xml](Workflow for other tasks.xml)
 
 **Что нужно сделать**
 
