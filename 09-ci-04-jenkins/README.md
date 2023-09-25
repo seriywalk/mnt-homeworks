@@ -3,9 +3,14 @@
 ## Подготовка к выполнению
 
 1. Создать два VM: для jenkins-master и jenkins-agent.
+
+![instances.png](images%2Finstances.png)
+
 2. Установить Jenkins при помощи playbook.
 3. Запустить и проверить работоспособность.
 4. Сделать первоначальную настройку.
+
+![jenkins.png](images%2Fjenkins.png)
 
 ## Основная часть
 
