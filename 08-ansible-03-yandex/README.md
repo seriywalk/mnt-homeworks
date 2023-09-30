@@ -23,35 +23,43 @@
 
 9. Подготовьте README.md-файл по своему playbook. В нём должно быть описано: что делает playbook, какие у него есть параметры и теги.
 
-Playbook производит развертывание необходимых приложений на сервера в yandex cloud.
+#### Playbook производит развертывание необходимых приложений на сервера в yandex cloud.
 
 **Задачи (Tasks)** 
+
 *Clickhous*e
+
 установка clickhouse
 настройка удаленных подключений к приложению
 создание базы данных и таблиц
+
 _Vector_
+
 установка vector
 изменение конфига приложения для отправки логов на сервер clickhouse
+
 _Lighthouse_
+
 установка lighthouse
 настройка nginx
 
 **Переменные (Variables)**
+
 Хранятся в каталоге group_vars:
 
-clickhouse_version, vector_installer_url, lighthouse_distrib - версии, URLs приложений; 
-clickhouse_database_name - имя базы данных clickhouse;
-clickhouse_create_table - структура таблицы для хранения логов;
-vector_config - содержимое конфигурационного файла для vector;
-блок конфигурации nginx для работы с lighthouse;
+* clickhouse_version, vector_installer_url, lighthouse_distrib - версии, URLs приложений; 
+* clickhouse_database_name - имя базы данных clickhouse;
+* clickhouse_create_table - структура таблицы для хранения логов;
+* vector_config - содержимое конфигурационного файла для vector;
+* nginx_conf - блок конфигурации nginx для работы с lighthouse;
 
 **Тэги (Tags)**
-clickhouse производит полную конфигурацию сервера clickhouse;
-clickhouse_db производит конфигурацию базы данных и таблицы;
-vector производит полную конфигурацию сервера vector;
-vector_config производит изменение в конфиге приложения vector;
-lighthouse производит установку lighthouse.
+
+* clickhouse производит полную конфигурацию сервера clickhouse;
+* clickhouse_db производит конфигурацию базы данных и таблицы;
+* vector производит полную конфигурацию сервера vector;
+* vector_config производит изменение в конфиге приложения vector;
+* lighthouse производит установку lighthouse.
 
 10. Готовый playbook выложите в свой репозиторий, поставьте тег `08-ansible-03-yandex` на фиксирующий коммит, в ответ предоставьте ссылку на него.
 
