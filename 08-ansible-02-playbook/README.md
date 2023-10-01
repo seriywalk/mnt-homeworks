@@ -41,7 +41,7 @@ _Vector_
 
 Хранятся в каталоге group_vars:
 
-* clickhouse_version, vector_installer_url, lighthouse_distrib - версии, URLs приложений; 
+* clickhouse_version, vector_installer_url  - версии, URLs приложений; 
 * clickhouse_database_name - имя базы данных clickhouse;
 * clickhouse_create_table - структура таблицы для хранения логов;
 * vector_config - содержимое конфигурационного файла для vector;
