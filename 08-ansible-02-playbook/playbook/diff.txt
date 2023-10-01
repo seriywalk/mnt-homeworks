@@ -1,0 +1,51 @@
+
+PLAY [Drop database Clickhouse] ************************************************
+
+PLAY [Install Clickhouse] ******************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [ansible-clickhouse]
+
+TASK [Get clickhouse distrib] **************************************************
+ok: [ansible-clickhouse] => (item=clickhouse-client)
+ok: [ansible-clickhouse] => (item=clickhouse-server)
+ok: [ansible-clickhouse] => (item=clickhouse-common-static)
+
+TASK [Install clickhouse packages] *********************************************
+ok: [ansible-clickhouse]
+
+TASK [Enable remote connections to clickhouse server] **************************
+ok: [ansible-clickhouse]
+
+TASK [Flush handlers] **********************************************************
+
+TASK [Create database] *********************************************************
+ok: [ansible-clickhouse]
+
+TASK [Create log table] ********************************************************
+ok: [ansible-clickhouse]
+
+PLAY [Install Vector] **********************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [ansible-vector]
+
+TASK [Add clickhouse addresses to /etc/hosts] **********************************
+ok: [ansible-vector] => (item=ansible-clickhouse)
+
+TASK [Get vector distrib] ******************************************************
+ok: [ansible-vector]
+
+TASK [Install vector package] **************************************************
+ok: [ansible-vector]
+
+TASK [Redefine vector config name] *********************************************
+ok: [ansible-vector]
+
+TASK [Create vector config] ****************************************************
+ok: [ansible-vector]
+
+PLAY RECAP *********************************************************************
+ansible-clickhouse         : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+ansible-vector             : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
