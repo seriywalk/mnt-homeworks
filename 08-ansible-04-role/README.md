@@ -50,8 +50,9 @@
 11. В ответе дайте ссылки на оба репозитория с roles и одну ссылку на репозиторий с playbook.
 
 Роли:
-[Vector-role](git@github.com:seriywalk/vector-role.git)
-[Lighthouse-role](git@github.com:seriywalk/lighthouse-role.git)
+* [Vector-role](https://github.com/seriywalk/vector-role.git)
+
+* [Lighthouse-role](https://github.com/seriywalk/lighthouse-role.git)
 
 ---
 
