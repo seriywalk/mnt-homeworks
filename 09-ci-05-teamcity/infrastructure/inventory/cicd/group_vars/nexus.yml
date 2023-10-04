@@ -1,6 +1,6 @@
 ---
-nexus_user_group: nexus
-nexus_user_name: nexus
+nexus_user_group: sir
+nexus_user_name: sir
 nexus_directory_data: "/home/{{ nexus_user_name }}/sonatype-work/nexus3"
 nexus_directory_home: "/home/{{ nexus_user_name }}/nexus"
 nexus_directory_log: "/home/{{ nexus_user_name }}/log"
