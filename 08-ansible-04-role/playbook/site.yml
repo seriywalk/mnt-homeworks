@@ -9,7 +9,8 @@
   become: true
   roles:
     - vector-role
-
+    notify: Start Vector service
+     
 - name: Install lighthouse and Nginx
   hosts: lighthouse
 
@@ -21,3 +22,5 @@
         state: present
   roles:
     - lighthouse-role
+    notify: Start nginx service
+    
