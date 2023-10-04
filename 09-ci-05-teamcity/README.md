@@ -6,7 +6,7 @@
 2. Дождитесь запуска teamcity, выполните первоначальную настройку.
 3. Создайте ещё один инстанс (2CPU4RAM) на основе образа `jetbrains/teamcity-agent`. Пропишите к нему переменную окружения `SERVER_URL: "http://<teamcity_url>:8111"`.
 
-[yacloudVM.png](img%2FyacloudVM.png)
+![yacloudVM.png](img%2FyacloudVM.png)
 
 4. Авторизуйте агент.
 
@@ -25,7 +25,7 @@
 1. Создайте новый проект в teamcity на основе fork.
 2. Сделайте autodetect конфигурации.
 
-3. ![build.png](img%2Fbuild.png)
+![build.png](img%2Fbuild.png)
 
 3. Сохраните необходимые шаги, запустите первую сборку master.
 4. Поменяйте условия сборки: если сборка по ветке `master`, то должен происходит `mvn clean deploy`, иначе `mvn clean test`.
