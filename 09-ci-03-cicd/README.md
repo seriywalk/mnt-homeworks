@@ -6,12 +6,14 @@
 2. Пропишите в [inventory](./infrastructure/inventory/cicd/hosts.yml) [playbook](./infrastructure/site.yml) созданные хосты.
 3. Добавьте в [files](./infrastructure/files/) файл со своим публичным ключом (id_rsa.pub). Если ключ называется иначе — найдите таску в плейбуке, которая использует id_rsa.pub имя, и исправьте на своё.
 4. Запустите playbook, ожидайте успешного завершения.
+
+Вывод [ansible-playbook](ans.txt)
+
 5. Проверьте готовность SonarQube через [браузер](http://localhost:9000).
 6. Зайдите под admin\admin, поменяйте пароль на свой.
 7.  Проверьте готовность Nexus через [бразуер](http://localhost:8081).
 8. Подключитесь под admin\admin123, поменяйте пароль, сохраните анонимный доступ.
 
-Вывод [ansible-playbook](ans.txt)
 
 ## Знакомоство с SonarQube
 
@@ -25,12 +27,21 @@
 ![sonar_version.png](images%2Fsonar_version.png)
 
 5. Запустите анализатор против кода из директории [example](./example) с дополнительным ключом `-Dsonar.coverage.exclusions=fail.py`.
+
+[sonar.txt](example%2Fsonar.txt)
+
 6. Посмотрите результат в интерфейсе.
 
 ![sonar1.png](images%2Fsonar1.png)
 
 7. Исправьте ошибки, которые он выявил, включая warnings.
+
+[fail.py](example%2Ffail.py)
+
 8. Запустите анализатор повторно — проверьте, что QG пройдены успешно.
+
+[sonar2.txt](example%2Fsonar2.txt)
+
 9. Сделайте скриншот успешного прохождения анализа, приложите к решению ДЗ.
 
 ![sonar2.png](images%2Fsonar2.png)
@@ -49,9 +60,13 @@
    
 2. В него же загрузите такой же артефакт, но с version: 8_102.
 3. Проверьте, что все файлы загрузились успешно.
+
 ![maven.png](images%2Fmaven.png)
+
 4. В ответе пришлите файл `maven-metadata.xml` для этого артефекта.
+ 
 [maven-metadata.xml](mvn%2Fmaven-metadata.xml)
+
 ### Знакомство с Maven
 
 ### Подготовка к выполнению
@@ -60,7 +75,9 @@
 2. Разархивируйте, сделайте так, чтобы binary был доступен через вызов в shell (или поменяйте переменную PATH, или любой другой, удобный вам способ).
 3. Удалите из `apache-maven-<version>/conf/settings.xml` упоминание о правиле, отвергающем HTTP- соединение — раздел mirrors —> id: my-repository-http-unblocker.
 4. Проверьте `mvn --version`.
+
 ![mvn_version.png](images%2Fmvn_version.png)
+
 5. Заберите директорию [mvn](./mvn) с pom.
 
 ### Основная часть
@@ -69,11 +86,13 @@
 2. Запустите команду `mvn package` в директории с `pom.xml`, ожидайте успешного окончания.
 
 [mvn_package.txt](mvn%2Fmvn_package.txt)
+
 3. Проверьте директорию `~/.m2/repository/`, найдите ваш артефакт.
 
 ![mvn_repo.png](images%2Fmvn_repo.png)
 
 4. В ответе пришлите исправленный файл `pom.xml`.
+
 [pom.xml](mvn%2Fpom.xml)
 ---
 
