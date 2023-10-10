@@ -45,12 +45,15 @@
 
 7. Запустите сборку по master, убедитесь, что всё прошло успешно и артефакт появился в nexus.
 
-![err.png](img%2Ferr.png)
+![nexus.png](img%2Fnexus.png)
 
 8. Мигрируйте `build configuration` в репозиторий.
 
+![build_config.png](img%2Fbuild_config.png)
+
 9. Создайте отдельную ветку `feature/add_reply` в репозитории.
 
+![branch.png](img%2Fbranch.png)
  
 10. Напишите новый метод для класса Welcomer: метод должен возвращать произвольную реплику, содержащую слово `hunter`.
 
