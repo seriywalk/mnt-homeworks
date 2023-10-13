@@ -40,9 +40,24 @@ Filebeat следует сконфигурировать для отправки
 Результатом выполнения задания должны быть:
 
 - скриншот `docker ps` через 5 минут после старта всех контейнеров (их должно быть 5);
+
+- ![dockerps.png](img%2Fdockerps.png)
+
 - скриншот интерфейса kibana;
+
+ ![localhost.png](img%2Flocalhost.png)
+
 - docker-compose манифест (если вы не использовали директорию help);
 - ваши yml-конфигурации для стека (если вы не использовали директорию help).
+
+[docker-compose.yml](help%2Fdocker-compose.yml)
+
+[filebeat.yml](help%2Fconfigs%2Ffilebeat.yml)
+
+[logstash.conf](help%2Fconfigs%2Flogstash.conf)
+
+[logstash.yml](help%2Fconfigs%2Flogstash.yml)
+
 
 ## Задание 2
 
@@ -52,7 +67,8 @@ Filebeat следует сконфигурировать для отправки
 
 В манифесте директории help также приведенно dummy-приложение, которое генерирует рандомные события в stdout-контейнера.
 Эти логи должны порождать индекс logstash-* в elasticsearch. Если этого индекса нет — воспользуйтесь советами и источниками из раздела «Дополнительные ссылки» этого задания.
- 
+
+![kibana.png](img%2Fkibana.png)
 ---
 
 ### Как оформить решение задания
