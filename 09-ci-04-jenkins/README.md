@@ -31,7 +31,6 @@
 ![multi.png](images%2Fmulti.png)
 
 5. Создать Scripted Pipeline, наполнить его скриптом из [pipeline](./pipeline).
-
 6. Внести необходимые изменения, чтобы Pipeline запускал `ansible-playbook` без флагов `--check --diff`, если не установлен параметр при запуске джобы (prod_run = True). По умолчанию параметр имеет значение False и запускает прогон с флагами `--check --diff`.
 
 ![scripted.png](images%2Fscripted.png)
@@ -44,6 +43,7 @@ https://github.com/seriywalk/vector-role.git
 [Declarative Pipeline](https://github.com/seriywalk/vector-role/blob/master/Jenkinsfile)
 
 [Scripted Pipline](scriptedjenkinsfile)
+
 ## Необязательная часть
 
 1. Создать скрипт на groovy, который будет собирать все Job, завершившиеся хотя бы раз неуспешно. Добавить скрипт в репозиторий с решением и названием `AllJobFailure.groovy`.
